@@ -16,4 +16,4 @@ jobs:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_USER_ID: ${{ secrets.TELEGRAM_USER_ID }}
       volumes:
-        - main.py:/tmp/file
+        - /etc/os-release:/tmp/file
