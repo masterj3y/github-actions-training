@@ -11,7 +11,7 @@ jobs:
           python-version: '3.10'
       - run: python main.py
     container:
-      image: masterj3y/tupload
+      image: masterj3y/tupload:0.0.1
       env: 
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_USER_ID: ${{ secrets.TELEGRAM_USER_ID }}
