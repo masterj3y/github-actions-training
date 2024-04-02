@@ -10,7 +10,7 @@ jobs:
         with:
           python-version: '3.10'
       - run: python main.py
-      - uses: masterj3y/tupload@v1
+      - uses: masterj3y/tupload@v2
         with:
           telegram-bot-token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           telegram-user-id: ${{ secrets.TELEGRAM_USER_ID }}
@@ -18,4 +18,4 @@ jobs:
         env: 
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_USER_ID: ${{ secrets.TELEGRAM_USER_ID }}
-          FILE_PATH: main.py
+          FILE_PATH: /etc/os-release
